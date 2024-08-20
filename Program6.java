@@ -9,8 +9,8 @@ import java.util.Scanner;
         System.out.println("Enter a radius:");
         double radius = scanner.nextDouble();
         double diameter = radius*2;
-        double area = PI*(radius*radius);
-        double circumference = PI*diameter;
+        double area = Math.round(PI*(radius*radius)*1000)/1000.0;
+        double circumference = Math.round(2*PI*radius*1000)/1000.0;
         System.out.println("\n The radius is: " + radius);
         System.out.println("\n The diameter is: " + diameter);
         System.out.println("\n The area is: " + area);
@@ -28,8 +28,8 @@ Enter a radius:
 
  The diameter is: 7.424
 
- The area is: 43.28779268096
+ The area is: 43.288
 
- The circumference is: 23.32316416
+ The circumference is: 23.323
 
 */
